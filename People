@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Trip to Greece</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      body {
+        box-sizing: border-box;
+        background-color: #005fff;
+        font-family: "Times New Roman", Times, serif;
+        text-align: center;
+      }
+      #header {
+        font-size: 4rem;
+        color: white;
+        font-weight: bold;
+      }
+      #nav {
+        background-color: white;
+      }
+      #nav div {
+        border: solid thin black;
+        padding: 1%;
+        font-size: 1.2rem;
+      }
+      #content {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+      .image {
+        width: 50%;
+        margin: auto;
+        margin-top: 1%;
+      }
+      .items {
+        width: 50%;
+        margin: auto;
+        margin-top: 1%;
+      }
+      p {
+        font-size: 1.3em;
+      }
+      #cardImages {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 10px;
+      }
+      #cardImages img {
+        max-width: 100%;
+        height: 300px;
+      }
+      @media screen and (min-width: 768px) {
+        #content {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-auto-rows: auto;
+          column-gap: 2%;
+        }
+        .items {
+          width: 90%;
+          height: 100%;
+          font-size: 0.9em;
+        }
+        #btnPopulation,
+        #btnReligion,
+        #btnCulture,
+        #population,
+        #religion,
+        #culture {
+          grid-column-start: 1;
+        }
+        #btnEthnicity,
+        #btnFamous,
+        #btnEconomy,
+        #ethnicity,
+        #famous,
+        #economy {
+          grid-column-start: 2;
+        }
+      }
+      @media screen and (min-width: 1200px) {
+        #grid {
+          display: grid;
+          grid-template-columns: 1fr 5fr;
+          gap: 1%;
+        }
+        .items {
+          width: 100%;
+          font-size: 0.8em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">The People of Greece</div>
+    <div id="grid">
+      <div class="container-fluid">
+        <div id="nav" class="nav row">
+          <div id="home" class="col col-xl-12">
+            <a
+              href="index.html"
+              class="nav-link"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              title="Home"
+              >Home</a
+            >
+          </div>
+          <div id="history" class="col col-xl-12">
+            <a
+              href="history.html"
+              class="nav-link"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              title="History"
+              >History</a
+            >
+          </div>
+          <div id="area" class="col col-xl-12">
+            <a
+              href="area.html"
+              class="nav-link"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              title="Area"
+              >Area</a
+            >
+          </div>
+          <div id="nature" class="col col-xl-12">
+            <a
+              href="nature.html"
+              class="nav-link"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              title="Nature"
+              >Nature</a
+            >
+          </div>
+          <div id="people" class="col col-xl-12">
+            <a
+              href="people.html"
+              class="nav-link active"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              title="People"
+              >People</a
+            >
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <a
+          id="btnPopulation"
+          class="btn btn-primary"
+          data-bs-toggle="collapse"
+          href="#population"
+          role="button"
+          aria-expanded="false"
+          >Population</a
+        >
+        <a
+          id="btnEthnicity"
+          class="btn btn-primary"
+          data-bs-toggle="collapse"
+          href="#ethnicity"
+          role="button"
+          aria-expanded="false"
+          >Ethnic Groups</a
+        >
+
+        <div id="population" class="collapse card items">
+          <div class="image">
+            <img
+              src="Images/GreecePopulation.png"
+              class="card-img-top"
+              alt="A graph showing the history of the population of Greece"
+            />
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Population</h3>
+            <p class="card-text">
+              The current population of Greece is a little over 10 million, but
+              slowly, the overall population is declining. After hitting a peak
+              of 11.1 million in 2010, and slowly ever since, the population has
+              been declining every year. This is likely due to the fertility
+              rate in Greece greatly decreasing as well. It's projected that the
+              population will be down to 6 million by the end of the century.
+            </p>
+          </div>
+        </div>
+
+        <div id="ethnicity" class="collapse card items">
+          <div class="image">
+            <img
+              src="Images/GreekPeople.jpg"
+              class="card-img-top"
+              alt="A bunch of Greek people in a parade or rally"
+            />
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Ethnic Groups</h3>
+            <p class="card-text">
+              The main Ethnic Groups in Greece are Hellenes also known as
+              Greeks, Turks, Albanians, and Bulgarians. However the Hellenes
+              make up over 90% of the population. Back in the 4th Century BC,
+              Greece was invaded by many different groups of Crusaders, and out
+              of those groups, the Slavs created homes and villages in Greece,
+              intending to stay forever. However, by the 9th Century BC, most of
+              the Slavs had left, leaving only a few to stay. This is when the
+              Turks and Albanians arrived to Greece.
+            </p>
+          </div>
+        </div>
+
+        <a
+          id="btnReligion"
+          class="btn btn-primary"
+          data-bs-toggle="collapse"
+          href="#religion"
+          role="button"
+          aria-expanded="false"
+          >Religion</a
+        >
+
+        <a
+          id="btnFamous"
+          class="btn btn-primary"
+          data-bs-toggle="collapse"
+          href="#famous"
+          role="button"
+          aria-expanded="false"
+          >Famous Greek People</a
+        >
+
+        <div id="religion" class="collapse card items">
+          <div class="image">
+            <img
+              src="Images/GreekChurch.jpg"
+              class="card-img-top"
+              alt="A church in Greece"
+            />
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Religion</h3>
+            <p class="card-text">
+              The main religion practiced in Greece is Greek Orthodox also known
+              as Greek Christianity. As of 2015, it was practiced by between
+              80-90% of the population primarily in the Greek Orthodox Church.
+              The rest of the population primarily are Atheist or Muslim. In the
+              past, almost everyone in Greece used to believe in a very
+              different religion. They were polytheistic, meaning they believed
+              in many Gods and Goddesses with many stories surrounding these
+              supernatural beings and the creation of the Universe.
+            </p>
+          </div>
+        </div>
+
+        <div id="famous" class="collapse card items">
+          <div class="image">
+            <img
+              src="Images/AlexanderTheGreat.webp"
+              class="card-img-top"
+              alt="A picture of Alexander the Great"
+            />
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Famous Greek People</h3>
+            <p class="card-text">
+              Greece was home to some of the most influential and famous people
+              in all of history. 3 of those people are: <br />
+              Alexander the Great: <br />
+              Alexander the Great was the king of Greece from 336 BC until his
+              death in 323 BC. He was renowned as a God during those times and
+              is still considered as a legendary individual to this day.
+              <br />
+              Homer: <br />
+              Homer was a Greek poet who wrote two of the most well known poems
+              of all time, The Iliad and The Odyssey. <br />
+              Archimedes: <br />
+              Archimedes is known as the greatest mathematician, inventor, and
+              astronomer of all of the ancient world. He famously created the
+              measurements of the circle.
+            </p>
+          </div>
+        </div>
+
+        <a
+          id="btnCulture"
+          class="btn btn-primary"
+          data-bs-toggle="collapse"
+          href="#culture"
+          role="button"
+          aria-expanded="false"
+          >Greek Culture</a
+        >
+
+        <a
+          id="btnEconomy"
+          class="btn btn-primary"
+          data-bs-toggle="collapse"
+          href="#economy"
+          role="button"
+          aria-expanded="false"
+          >Greek Economy</a
+        >
+
+        <div id="culture" class="collapse card items">
+          <div class="card-body">
+            <h3 class="card-title">Greek Culture</h3>
+            <div id="cardImages">
+              <img
+                src="Images/GreekMusic.jpg"
+                alt="A traditional musical demonstration in Greece"
+              />
+              <img
+                src="Images/GreekDancing.jpg"
+                alt="A picture of traditional Greek dancing"
+              />
+              <img src="Images/GreekFood.webp" alt="A picture of greek food" />
+              <img
+                src="Images/GreekArt.jpg"
+                alt="A picture of a statue of Athena in Greece"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div id="economy" class="collapse card items">
+          <div class="image">
+            <img
+              src="Images/GreekEconomy.jpg"
+              class="card-img-top"
+              alt="A picture of money with the Greek Flag"
+            />
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Greek Economy</h3>
+            <p class="card-text">
+              Currency: <br />
+              Like in lots of other European countries, Greece uses the Euro as
+              their currency, which is equivalent to 1.46 CAD. Economic <br />
+              Industries: <br />
+              Greece's main economic industries include, tourism, shipping,
+              industrial products, metal products, mining, and tobacco. <br />
+              Trading Partners: <br />
+              Greece's main trading partners are 1. Russia (10%) 2. Germany
+              (8.88%) 3. China (8.49%) 4. Iraq (7.29%) 5. Italy (6.3%)
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var tooltipTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      );
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+      });
+    </script>
+  </body>
+</html>
