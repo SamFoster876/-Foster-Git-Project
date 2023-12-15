@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Trip to Greece</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      body {
+        box-sizing: border-box;
+        background-color: #005fff;
+        font-family: "Times New Roman", Times, serif;
+        text-align: center;
+      }
+      #header {
+        font-size: 4rem;
+        color: white;
+        font-weight: bold;
+      }
+      #nav {
+        background-color: white;
+      }
+      #nav div {
+        border: solid thin black;
+        padding: 1%;
+        font-size: 1.2rem;
+      }
+      .natureText {
+        font-size: 2rem;
+        font-weight: bold;
+        color: white;
+      }
+      .natureImage {
+        max-width: 100%;
+      }
+      #location {
+        background-color: white;
+        width: 50%;
+        margin: auto;
+        font-size: 1.2rem;
+        margin-bottom: 1%;
+        margin-top: 1%;
+      }
+      #location div {
+        font-size: 1.2em;
+      }
+      #regions {
+        font-size: 1.2rem;
+        background-color: white;
+        width: 50%;
+        margin: auto;
+      }
+      #regions div {
+        font-size: 1.2em;
+      }
+      #wonderHead {
+        font-size: 3rem;
+        color: white;
+        font-weight: bold;
+        margin-top: 3%;
+      }
+      @media screen and (min-width: 768px) {
+        #wonders {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+        }
+        #wonderHead {
+          grid-column-start: 1;
+          grid-column-end: 3;
+        }
+        #paragraphs {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+      @media screen and (min-width: 1200px) {
+        #grid {
+          display: grid;
+          grid-template-columns: 1fr 5fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">Greek Area</div>
+    <div id="grid">
+      <div class="container-fluid">
+        <div id="nav" class="nav row">
+          <div id="home" class="col col-xl-12">
+            <a
+              href="index.html"
+              class="nav-link"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              title="Home"
+              >Home</a
+            >
+          </div>
+          <div id="history" class="col col-xl-12">
+            <a
+              href="history.html"
+              class="nav-link"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              title="History"
+              >History</a
+            >
+          </div>
+          <div id="area" class="col col-xl-12">
+            <a
+              href="area.html"
+              class="nav-link"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              title="Area"
+              >Area</a
+            >
+          </div>
+          <div id="nature" class="col col-xl-12">
+            <a
+              href="nature.html"
+              class="nav-link active"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              title="Nature"
+              >Nature</a
+            >
+          </div>
+          <div id="people" class="col col-xl-12">
+            <a
+              href="people.html"
+              class="nav-link"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              title="People"
+              >People</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div id="content">
+        <div id="paragraphs">
+          <div id="location">
+            <div>Location of Greece</div>
+            Greece is located in the south east of Europe in the Balkans, it
+            consists of thousands of little islands all throughout the seas
+            surrounding it. Greece was very important in ancient times and thus
+            has some historic and famous landmarks such as the Acropolis,
+            located in the capital of Greece, Athens. Within the Acropolis,
+            there is the most famous landmark of all of Greece, the Parthenon.
+            This is a temple built to honour the goddess Athena, who represents
+            wisdom and craft and has stood intact for thousands of years amongst
+            wars and battles and time. She is also said to be watching over
+            Athens to this day. Also located in Athens is the Temple of the
+            Olympian Zeus, which in ancient times was built to honour the god
+            Zeus who was seen as the ruler of the gods on Mount Olympus.
+          </div>
+
+          <div id="regions">
+            <div>Important Cities</div>
+            The most important city in Greece is Athens. Since ancient times,
+            this city has been the largest, most populated, and most advanced
+            city in Greece, and in ancient times, one of the most influential in
+            the world. While it has always been large and populated, Athens was
+            home to some of the best philosophers in history, some of the best
+            inventors, and also the birthplace of democracy. A political system
+            still used across the world to this day with very little changes.
+            The architecture was also ahead of its time due to the amount of
+            amazingly talented architects living in Athens. <br />
+            The second most important city in Greece is Thessaloniki. This is
+            because it has the second highest population, as well as in ancient
+            Greece, it was the hub of supplys to and from Greece. All shipments
+            being sent to other countries, or coming into Greece were sent into
+            Thessaloniki.
+          </div>
+        </div>
+
+        <div id="wonders">
+          <div id="wonderHead">
+            Some famous locations and landmarks in Greece
+          </div>
+          <div id="lakeCave">
+            <div class="natureText">Melissani Lake Cave</div>
+            <div class="natureImage">
+              <img
+                srcset="
+                  Images/lakeCaveSmall.jpg  400w,
+                  Images/lakeCaveMedium.jpg 500w,
+                  Images/lakeCaveLarge.webp 610w
+                "
+                sizes="(max-width: 499px) 400px, (max-width: 609px) 500px, 610px"
+                alt="A lake inside of a cave in Greece"
+              />
+            </div>
+          </div>
+
+          <div id="meteora">
+            <div class="natureText">Meteora</div>
+            <div class="natureImage">
+              <img
+                srcset="
+                  Images/meteoraSmall.jpg  400w,
+                  Images/meteoraMedium.jpg 500w,
+                  Images/meteoraLarge.webp 610w
+                "
+                sizes="(max-width: 499px) 400px, (max-width: 609px) 500px, 610px"
+                alt="A beautiful view of Meteora in Greece"
+              />
+            </div>
+          </div>
+
+          <div id="skiadi">
+            <div class="natureText">Skiadi Boulder</div>
+            <div class="natureImage">
+              <img
+                srcset="
+                  Images/skiadiSmall.jpg  400w,
+                  Images/skiadiMedium.jpg 500w,
+                  Images/skiadiLarge.webp 610w
+                "
+                sizes="(max-width: 499px) 400px, (max-width: 609px) 500px, 610px"
+                alt="A picture of a giant boulder held in the air by a small rock pedastal"
+              />
+            </div>
+          </div>
+
+          <div id="hotSprings">
+            <div class="natureText">Samothraki Hot Springs</div>
+            <div class="natureImage">
+              <img
+                srcset="
+                  Images/hotSpringsSmall.jpg  400w,
+                  Images/hotSpringsMedium.jpg 500w,
+                  Images/hotSpringsLarge.webp 610w
+                "
+                sizes="(max-width: 499px) 400px, (max-width: 609px) 500px, 610px"
+                alt="A picture of the Hot Springs in Samothraki, Greece"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var tooltipTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      );
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+      });
+    </script>
+  </body>
+</html>
