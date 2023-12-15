@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>A Trip to Greece</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+      link
+    />
+
+    <style>
+      body {
+        background-color: #005fff;
+        font-family: "Times New Roman", Times, serif;
+        color: aliceblue;
+      }
+      #header {
+        font-weight: bold;
+      }
+      h1,
+      h2 {
+        text-align: center;
+        padding-top: 20px;
+      }
+
+      img {
+        margin-left: 30px;
+        max-width: 90%;
+        padding-bottom: 20px;
+        padding: 10px;
+        background-color: aliceblue;
+      }
+      p {
+        text-align: justify;
+        background-color: aliceblue;
+        color: black;
+        padding: 20px;
+      }
+
+      img,
+      h2,
+      p {
+        margin-bottom: 10px;
+      }
+
+      #nav {
+        background-color: white;
+      }
+      #nav div {
+        border: solid thin black;
+        padding: 1%;
+        font-size: 1.2rem;
+        text-align: center;
+      }
+      #temp {
+        margin: auto;
+      }
+      @media screen and (min-width: 800px) {
+        body {
+          font-size: 1.1rem;
+        }
+      }
+      @media screen and (min-width: 1200px) {
+        body {
+          font-size: 0.9rem;
+        }
+        #grid {
+          display: grid;
+          grid-template-columns: 1fr 5fr;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 id="header">Contact us</h1>
+    <div id="grid">
+      <div class="container-fluid">
+        <div id="nav" class="nav row">
+          <div id="home" class="col col-xl-12">
+            <a
+              href="index.html"
+              class="nav-link"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              title="Home"
+              >Home</a
+            >
+          </div>
+          <div id="history" class="col col-xl-12">
+            <a
+              href="history.html"
+              class="nav-link"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              title="History"
+              >History</a
+            >
+          </div>
+          <div id="area" class="col col-xl-12">
+            <a
+              href="area.html"
+              class="nav-link"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              title="Area"
+              >Area</a
+            >
+          </div>
+          <div id="nature" class="col col-xl-12">
+            <a
+              href="nature.html"
+              class="nav-link active"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              title="Nature"
+              >Nature</a
+            >
+          </div>
+
+
+
+          <div id="people" class="col col-xl-12">
+            <a
+              href="people.html"
+              class="nav-link"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              title="People"
+              >People</a
+            >
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h2>Reach us here</h2>
+              <p>
+                Contact Form: A user-friendly form that allows visitors to input their name, email address, subject, and message.
+                Include fields for additional information that might be relevant to their inquiry.
+                Contact Information: Physical address of your business.
+                Phone number for different purposes (customer support, sales).
+                General email address and specific email addresses for different departments.<img src="Images/smily.jpg" alt="Forest Image" />
+              </p>
+              <img src="Images/Foloi_oak_forest.JPG" alt="Forest Image" />
+            </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-zTvFa7a8QefR5StjG1I1zHg5iUPOz5weqvkuW5+WrxsibGNV7Foq14WLaFq37T53"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var tooltipTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      );
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+      });
+    </script>
+  </body>
+</html>
