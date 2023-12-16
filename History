@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>A Trip to Greece</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+      link
+    />
+
+    <style>
+      body {
+        background-color: #005fff;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 1.2rem;
+      }
+      h1 {
+        font-size: 3em;
+        text-align: center;
+        padding-top: 20px;
+        color: aliceblue;
+        font-weight: bold;
+      }
+      h2 {
+        text-align: center;
+        font-size: 40px;
+        color: aliceblue;
+      }
+      .container {
+        margin-top: 20px;
+      }
+
+      img {
+        max-width: 80%;
+        height: auto;
+        float: left;
+        margin-top: 10px;
+        margin-left: 30px;
+        margin-right: 30px;
+        padding-bottom: 0;
+        border-style: solid;
+        border-color: white;
+        border-width: thick;
+      }
+
+      section {
+        margin: 45px;
+        padding-left: 80px;
+        padding-right: 80px;
+      }
+
+      p {
+        padding: 10px;
+        background-color: white;
+      }
+      #IMAGE {
+        width: 100%;
+      }
+      #nav {
+        background-color: white;
+      }
+      #nav div {
+        border: solid thin black;
+        padding: 1%;
+        font-size: 1.2rem;
+        text-align: center;
+      }
+      @media screen and (min-width: 800px) {
+        body {
+          font-size: 1.1rem;
+        }
+      }
+      @media screen and (min-width: 1200px) {
+        body {
+          font-size: 0.9rem;
+        }
+        #grid {
+          display: grid;
+          grid-template-columns: 1fr 5fr;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>History of Greece</h1>
+    <div id="grid">
+      <div class="container-fluid">
+        <div id="nav" class="nav row">
+          <div id="home" class="col col-xl-12">
+            <a
+              href="index.html"
+              class="nav-link"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              title="Home"
+              >Home</a
+            >
+          </div>
+          <div id="history" class="col col-xl-12">
+            <a
+              href="history.html"
+              class="nav-link"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              title="History"
+              >History</a
+            >
+          </div>
+          <div id="home" class="col col-xl-12">
+            <a
+              href="area.html"
+              class="nav-link"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              title="Area"
+              >Area</a
+            >
+          </div>
+          <div id="home" class="col col-xl-12">
+            <a
+              href="nature.html"
+              class="nav-link"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              title="Nature"
+              >Nature</a
+            >
+          </div>
+          <div id="home" class="col col-xl-12">
+            <a
+              href="people.html"
+              class="nav-link"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              title="People"
+              >People</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div id="content" class="container-md">
+        <section>
+          <img src="Images/grreece.jpg" alt="Greek landscape" />
+          <div class="text-box">
+            <h2>Ancient History</h2>
+            <p>
+              The history of Greece encompasses the history of the territory of
+              the modern nation-state of Greece as well as that of the Greek
+              people and the areas they inhabited and ruled historically. The
+              scope of Greek habitation and rule has varied throughout the ages
+              and as a result, the history of Greece is similarly elastic in
+              what it includes. Generally, the history of Greece is divided into
+              the following periods: Paleolithic Greece, starting c. 3.3 million
+              years ago and ending in 20000 BC. Significant geomorphological and
+              climatic changes occurred in the modern Greek area which were
+              definitive for the development of fauna and flora and the survival
+              of Homo sapiens in the region. Mesolithic Greece, starting in
+              13000 BC and ending around 7000 BC, was a period of long and slow
+              development of primitive human "proto-communities". Neolithic
+              Greece, beginning with the establishment of agricultural societies
+              around 7000 BC and ending c. 3200 – c. 3100 BC, was a vital part
+              of the early history of Greece because it was the base for early
+              Bronze Age civilizations in the area. The first organized
+              communities developed and basic art became more advanced in
+              Neolithic Greece. Bronze Age Greece (c. 3200 – c. 1100 BC) began
+              with the transition to a metal-based economy during the Early
+              Helladic period of mainland Greece (c. 3200 – c. 2000 BC).
+              Meanwhile, Cycladic culture prospered in the Cyclades (c. 3200 –
+              c. 1050 BC) and Minoan civilization around Crete (c. 3500 –
+              c. 1100 BC). The Bronze Age ended with the rise and fall of the
+              Mycenaean Greek palace culture (c. 1750 – c. 1050 BC) in the Late
+              Bronze Age collapse.
+            </p>
+          </div>
+        </section>
+        <section class="row">
+          <div class="col-md-6">
+            <img
+              id="IMAGE"
+              src="Images/800px-Cavalcade_south_frieze_Parthenon_BM.jpg"
+              alt="Placeholder Image"
+            />
+          </div>
+          <div class="col-md-6">
+            <h2>Prehistoric Greece</h2>
+            <p>
+              Fossils of one of the earliest pre-humans (Ouranopithecus
+              macedoniensis, 9.6–8.7 million years ago), and of quite possibly
+              the oldest direct ancestor of all humans (Graecopithecus, 7.2
+              million years ago) were found in Greece. In addition, 5.7 million
+              year old footprints were found on the Greek island of Crete, which
+              may suggest hominin evolution outside of Africa, contrary to
+              current hypotheses. The Paleolithic period is generally
+              understudied in Greece because research has traditionally focused
+              on the later parts of prehistory (Neolithic, Bronze Age) and the
+              Classical times. Nevertheless, significant advances have been
+              achieved over recent years, and the archaeological record has been
+              enriched with new material, collected mostly in the framework of
+              regional surveys but also through systematic or rescue
+              excavations. New caves and rock shelters, as well as recently
+              discovered and important open-air sites are now being excavated.
+              The earliest traces of human habitation in present-day Greece were
+              discovered at Petralona Cave in Chalkidiki, Macedonia and date
+              back 1 million years.
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <img src="Images/Greek-roman-deities.jpg" alt="Greek architecture" />
+          <div class="text-box">
+            <h2>Roman Greece</h2>
+            <p>
+              In the 2nd century BC, Greece was conquered by the Roman Republic
+              and came under its control. Still, Greek culture flourished during
+              this period city states maintained a level of political autonomy,
+              and Roman society adopted many aspects of Greek culture. For
+              example, Roman poets like Ovid, Virgil, and Horace retold and
+              adopted many Greek myths of old, folding them into Roman culture.
+              Roman society even claimed to share a cultural lineage with
+              Greece, as exemplified by Virgil's epic, the Aeneid, which details
+              their founding myth of how the Roman people descended from the
+              Trojan Aeneas of Homeric lore. Although the period of Roman rule
+              in Greece is conventionally dated as starting from the sacking of
+              Corinth by the Roman Lucius Mummius in 146 BC, Macedonia had
+              already come under Roman control with the defeat of its king,
+              Perseus, by the Roman Aemilius Paullus at Pydna in 168 BC. The
+              Romans divided the region into four smaller republics, and in 146
+              BC Macedonia officially became a province, with its capital at
+              Thessalonica. The rest of the Greek city-states eventually paid
+              homage to Rome, ending their de jure autonomy as well. The Romans
+              left local administration to the Greeks without making any attempt
+              to abolish traditional political patterns. The agora in Athens
+              continued to be the center of civic and political life. Emperor
+              Caracalla's decree in 212 AD, the Constitutio Antoniniana,
+              extended citizenship outside Italy to all free adult men in the
+              entire Roman Empire, effectively raising provincial populations to
+              equal status with the city of Rome itself. The importance of this
+              decree is historical, not political. It set the basis for
+              integration, where the economic and judicial mechanisms of the
+              state could be applied throughout the Mediterranean as was once
+              done from Latium into all Italy. In practice, integration did not
+              take place uniformly. Societies already integrated with Rome, such
+              as Greece, were favored by the decree, as opposed to the further
+              away, poorer, or more culturally different provinces like Britain,
+              Palestine, or Egypt. Caracalla's decree did not set in motion the
+              processes that led to the transfer of power from Italy and the
+              West to Greece and the East, but rather accelerated them, setting
+              the foundations for the millennium-long rise of Greece, in the
+              form of the Eastern Roman Empire, as a major power in Europe and
+              the Mediterranean in the Middle Ages.
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <div class="row">
+            <div class="col-md-6">
+              <h2>Alexander the Great</h2>
+              <p>
+                He was born in 356 BCE at Pella in Macedonia, the son of Philip
+                II and Olympias (daughter of King Neoptolemus of Epirus). From
+                age 13 to 16 he was taught by Aristotle, who inspired him with
+                an interest in philosophy, medicine, and scientific
+                investigation, but he was later to advance beyond his teacher’s
+                narrow precept that non-Greeks should be treated as slaves. Left
+                in charge of Macedonia in 340 during Philip’s attack on
+                Byzantium, Alexander defeated the Maedi, a Thracian people. Two
+                years later he commanded the left wing at the Battle of
+                Chaeronea, in which Philip defeated the allied Greek states, and
+                displayed personal courage in breaking the Sacred Band of
+                Thebes, an elite military corps composed of 150 pairs of lovers.
+                A year later Philip divorced Olympias, and, after a quarrel at a
+                feast held to celebrate his father’s new marriage, Alexander and
+                his mother fled to Epirus, and Alexander later went to Illyria.
+                Shortly afterward, father and son were reconciled and Alexander
+                returned, but his position as heir was jeopardized.
+              </p>
+            </div>
+            <div class="col-md-6">
+              <img
+                src="Images/THESS_ALEXANDER_01.jpg"
+                alt="Placeholder Image"
+              />
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-zTvFa7a8QefR5StjG1I1zHg5iUPOz5weqvkuW5+WrxsibGNV7Foq14WLaFq37T53"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var tooltipTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      );
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+      });
+    </script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
